@@ -13,6 +13,7 @@ public class BarCode {
         isbn.setData("123456789");
         ean13.setData("000123456789");
         try {
+            issn.drawBarcode("Java Graphics2D object");
             issn.drawBarcode("/home/malith/malithBarCodeISSN.jpg");
             isbn.drawBarcode("/home/malith/malithBarCodeISBN.jpg");
             ean13.drawBarcode("/home/malith/malithBarCodeEAN13.jpg");
