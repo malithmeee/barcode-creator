@@ -17,8 +17,8 @@ public class BarCode {
 //            issn.setResolution(1000);
 //            isbn.drawBarcode("/home/malith/malithBarCodeISBN.jpg");
             issn.drawBarcode("/home/malith/malithBarCodeISSN.jpg");
-            ean13.setResolution(1000);
             ean13.setAutoResize(true);
+            ean13.setBarcodeWidth(220);
             ean13.setBarcodeHeight(75);
             ean13.drawBarcode("/home/malith/malithBarCodeEAN13.jpg");
         } catch (Exception e) {
