@@ -11,11 +11,15 @@ public class BarCode {
         EAN13 ean13 = new EAN13();
         issn.setData("123456789");
         isbn.setData("123456789");
-        ean13.setData("000123456789");
+        ean13.setData("479123456789");
         try {
-            issn.drawBarcode("Java Graphics2D object");
+//            issn.drawBarcode("Java Graphics2D object");
+//            issn.setResolution(1000);
+//            isbn.drawBarcode("/home/malith/malithBarCodeISBN.jpg");
             issn.drawBarcode("/home/malith/malithBarCodeISSN.jpg");
-            isbn.drawBarcode("/home/malith/malithBarCodeISBN.jpg");
+            ean13.setResolution(1000);
+            ean13.setAutoResize(true);
+            ean13.setBarcodeHeight(75);
             ean13.drawBarcode("/home/malith/malithBarCodeEAN13.jpg");
         } catch (Exception e) {
             e.printStackTrace();
